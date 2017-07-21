@@ -49,7 +49,7 @@ void draw() {
     ball1 ball = balls.get(i);
     ball.y += 2; //makes the ball actually fall/move down
 
-    if ((xPosition - 40 <= ball.x && ball.x <= 40 + xPosition) && (ball.y == 250)) { //Add a point if the Character touches the ball. NEED TO FIX THESE PARAMETERS TO FIT NEW CHARACTER INSTEAD OF OLD IMAGE...)
+    if ((xPosition - 40 <= ball.x && ball.x <= 40 + xPosition) && (ball.y >= 200 && ball.y <= 280)) { //Add a point if the Character touches the ball. NEED TO FIX THESE PARAMETERS TO FIT NEW CHARACTER INSTEAD OF OLD IMAGE...)
       points.score++;
       balls.remove(0);
     } 
